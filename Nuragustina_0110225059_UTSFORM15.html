@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Kendaraan Anda</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+        }
+        td {
+            padding: 8px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .button-group {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Registrasi Kendaraan Anda</legend>
+            <form action="#" method="POST">
+
+                <table>
+                    <tr>
+                        <td>Status</td>
+                        <td>
+                            <input type="radio" id="mahasiswa" name="status" value="mahasiswa" checked>
+                            <label for="mahasiswa">Mahasiswa</label>
+                            <input type="radio" id="dosen" name="status" value="dosen">
+                            <label for="dosen">Dosen</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="nim_nidn">NIM/NIDN</label></td>
+                        <td><input type="text" id="nim_nidn" name="nim_nidn"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="nama_lengkap">Nama Lengkap</label></td>
+                        <td><input type="text" id="nama_lengkap" name="nama_lengkap"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="prodi">Prodi</label></td>
+                        <td>
+                            <select id="prodi" name="prodi">
+                                <option value="" disabled selected>Pilih Prodi</option>
+                                <option value="si">Sistem Informasi</option>
+                                <option value="ti">Teknik Informatika</option>
+                                <option value="ak">Akuntansi</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Jenis Kendaraan</td>
+                        <td>
+                            <input type="radio" id="motor" name="jenis_kendaraan" value="motor" checked>
+                            <label for="motor">Motor</label>
+                            <input type="radio" id="mobil" name="jenis_kendaraan" value="mobil">
+                            <label for="mobil">Mobil</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="nopol">NoPol</label></td>
+                        <td><input type="text" id="nopol" name="nopol"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="merk">Merk</label></td>
+                        <td><input type="text" id="merk" name="merk"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="stnk">Upload STNK</label></td>
+                        <td>
+                            <input type="file" id="stnk" name="stnk">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="button-group">
+                            <button type="submit">Daftar</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
